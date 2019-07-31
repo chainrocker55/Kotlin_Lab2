@@ -87,13 +87,6 @@ val setTable : () -> Char = {
     }
     table[row-1][col-1]
 }
-val newTable:()-> Unit = {
-    table = arrayOf(
-        arrayOf('-', '-', '-'),
-        arrayOf('-', '-', '-'),
-        arrayOf('-', '-', '-')
-    )
-}
 val isWins:() -> Boolean = {
     var flag:Boolean = false
     for(i in 0..2){
@@ -112,10 +105,6 @@ val isWins:() -> Boolean = {
     if(table[0][2].equals(table[1][1]) && table[1][1].equals(table[2][0])&& !(table[1][1].equals('-'))){
         flag = true
     }
-
-
-
-
-
+    
     flag
 }
